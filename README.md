@@ -15,7 +15,7 @@ Version 1.00: not all tested, please test and send your report to crialdev@gmail
           - xbmcgui.ControlCheckMark
           - xbmcgui.ControlEdit // Tested on Krypton
           - xbmcgui.ControlFadeLabel // Tested on Krypton
-          - xbmcgui.ControlImage
+          - xbmcgui.ControlImage // Tested on Krypton
           - xbmcgui.ControlLabel // Tested on Krypton
           - xbmcgui.ControlList
           - xbmcgui.ControlProgress
