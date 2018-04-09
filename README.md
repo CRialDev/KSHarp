@@ -7,6 +7,7 @@ Python Call C# application console with subprocess.Popen, C# listen standard inp
 Version 1.00: not all tested, please test and send your report to crialdev@gmail.com
 
     - Implemented : 
+          - xbmcplugin.*
           - xbmc.InfoTagMusic
           - xbmc.InfoTagVideo
           - xbmc.Keyboard // Tested on Krypton
