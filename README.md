@@ -2,6 +2,8 @@
 Write Kodi (xbmc) Addon with Csharp (C#)
 Please Test and Contribute !!
 
+Python Call C# application console with subprocess.Popen, C# listen standard input for Python event and reply to Function write in standard output.
+
 Version 1.00: not all tested, please test and send your report to crialdev@gmail.com
 
     - Implemented : 
