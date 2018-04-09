@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71ED26A2-BD90-48B4-A736-B05DC7F5D234}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KSharp</RootNamespace>
+    <AssemblyName>KSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Colors.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="KSharp\CommandeType.cs" />
+    <Compile Include="KSharp\LibraryType.cs" />
+    <Compile Include="KSharp\MonitorEventType.cs" />
+    <Compile Include="KSharp\Response.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Python\Array.cs" />
+    <Compile Include="Python\PythonObject.cs" />
+    <Compile Include="Python\Sys.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="xbmcaddon\Addon.cs" />
+    <Compile Include="xbmcgui\Action.cs" />
+    <Compile Include="xbmcgui\Button.cs" />
+    <Compile Include="xbmcgui\Control.cs" />
+    <Compile Include="xbmcgui\Dialog.cs" />
+    <Compile Include="xbmcgui\DialogBusy.cs" />
+    <Compile Include="xbmcgui\DialogProgress.cs" />
+    <Compile Include="xbmcgui\DialogProgressBG.cs" />
+    <Compile Include="xbmcgui\Edit.cs" />
+    <Compile Include="xbmcgui\FadeLabel.cs" />
+    <Compile Include="xbmcgui\Image.cs" />
+    <Compile Include="xbmcgui\Label.cs" />
+    <Compile Include="xbmcgui\List.cs" />
+    <Compile Include="xbmcgui\ListItem.cs" />
+    <Compile Include="xbmcgui\Progress.cs" />
+    <Compile Include="xbmcgui\Slider.cs" />
+    <Compile Include="xbmcgui\Spin.cs" />
+    <Compile Include="xbmcgui\TextBox.cs" />
+    <Compile Include="xbmcgui\Window.cs" />
+    <Compile Include="xbmcgui\WindowBase.cs" />
+    <Compile Include="xbmcgui\WindowDialog.cs" />
+    <Compile Include="xbmcgui\WindowXml.cs" />
+    <Compile Include="xbmcgui\WindowXmlBase.cs" />
+    <Compile Include="xbmcgui\WindowXmlDialog.cs" />
+    <Compile Include="xbmcplugin\ContentType.cs" />
+    <Compile Include="xbmcplugin\Plugin.cs" />
+    <Compile Include="xbmcplugin\PluginFile.cs" />
+    <Compile Include="xbmcplugin\PluginFolder.cs" />
+    <Compile Include="xbmcplugin\PluginItem.cs" />
+    <Compile Include="xbmcvfs\File.cs" />
+    <Compile Include="xbmc\InfoTagMusic.cs" />
+    <Compile Include="xbmc\InfoTagVideo.cs" />
+    <Compile Include="xbmc\Keyboard.cs" />
+    <Compile Include="xbmc\Monitor.cs" />
+    <Compile Include="xbmc\PlayList.cs" />
+    <Compile Include="xbmc\PlayListItem.cs" />
+    <Compile Include="xbmc\Xbmc.cs" />
+    <Compile Include="KSharp\KSharp.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

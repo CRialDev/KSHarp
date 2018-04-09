@@ -1,0 +1,5 @@
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\SimpleExample.exe.config
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\SimpleExample.exe
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\SimpleExample.pdb
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\KSharp.dll
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\KSharp.pdb
