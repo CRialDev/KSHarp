@@ -21,7 +21,7 @@ namespace CRial.xbmcplugin
             return it;
         }
 
-        internal PluginFile CreateFile(string label, string fileUrl = "")
+        public PluginFile CreateFile(string label, string fileUrl = "")
         {
             PluginFile it = new PluginFile(label, fileUrl);
             it._url = _url + "/" + label;
