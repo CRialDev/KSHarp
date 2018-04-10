@@ -18,6 +18,9 @@ namespace CRial.Python
         {
             get
             {
+                if (index > Count)
+                    return (T)(object)null;
+
                 if (typeof(T) == typeof(int) || typeof(T) == typeof(long) || typeof(T) == typeof(float) || typeof(T) == typeof(bool) || typeof(T) == typeof(string))
                 {
                     return Utils.Call<T>(_name + "[" + index + "]");
@@ -37,6 +40,12 @@ namespace CRial.Python
                     Utils.Call(_name + "[" + index + "] = '" + value + "'");
                 }
             }
+        }
+        public T Get(int index, T Default)
+        {
+            if (index >= Count)
+                return Default;
+            else return this[index];
         }
         public int Count
         {

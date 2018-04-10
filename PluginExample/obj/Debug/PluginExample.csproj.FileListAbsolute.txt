@@ -1,0 +1,11 @@
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\bin\Debug\PluginExample.exe.config
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\bin\Debug\PluginExample.exe
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\bin\Debug\PluginExample.pdb
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\bin\Debug\KSharp.dll
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\bin\Debug\KSharp.pdb
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\obj\Debug\PluginExample.csprojResolveAssemblyReference.cache
+\\192.168.8.104\Root\storage\.kodi\addons\plugin.ksharp.simplepluginexample\KSharp\addon.exe.config
+\\192.168.8.104\Root\storage\.kodi\addons\plugin.ksharp.simplepluginexample\KSharp\addon.exe
+\\192.168.8.104\Root\storage\.kodi\addons\plugin.ksharp.simplepluginexample\KSharp\addon.pdb
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\obj\Debug\addon.exe
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\PluginExample\obj\Debug\addon.pdb

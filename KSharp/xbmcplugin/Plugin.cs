@@ -24,7 +24,11 @@ namespace CRial.xbmcplugin
         }
         internal string ParseUrl()
         {
-            if (Sys.argv[2].StartsWith("?")) return Sys.argv[2].Substring(1).Replace("%2f", "/").Replace("%20", " ");
+            if (Sys.argv.Count >= 3)
+            {
+                if (Sys.argv[2].StartsWith("?")) return Sys.argv[2].Substring(1).Replace("%2f", "/").Replace("%20", " ");
+                else return "root";
+            }
             else return "root";
         }
         public PluginItem GetItem(string url)
