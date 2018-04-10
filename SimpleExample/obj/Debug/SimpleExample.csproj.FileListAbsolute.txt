@@ -3,3 +3,8 @@ C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\
 C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\SimpleExample.pdb
 C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\KSharp.dll
 C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\bin\Debug\KSharp.pdb
+\\192.168.8.104\Root\storage\.kodi\addons\script.ksharp.simpleexample\SimpleExample.exe.config
+\\192.168.8.104\Root\storage\.kodi\addons\script.ksharp.simpleexample\SimpleExample.exe
+\\192.168.8.104\Root\storage\.kodi\addons\script.ksharp.simpleexample\SimpleExample.pdb
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\obj\Debug\SimpleExample.exe
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\SimpleExample\obj\Debug\SimpleExample.pdb

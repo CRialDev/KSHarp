@@ -1,0 +1,5 @@
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\KSharp\bin\Debug\KSharp.dll
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\KSharp\bin\Debug\KSharp.pdb
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\KSharp\obj\Debug\KSharp.csprojResolveAssemblyReference.cache
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\KSharp\obj\Debug\KSharp.dll
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\KSharp\obj\Debug\KSharp.pdb

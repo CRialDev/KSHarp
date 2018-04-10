@@ -36,6 +36,10 @@ namespace CRial.xbmcplugin
             {
                 return _li;
             }
+            set
+            {
+                _li = value;
+            }
         }
     }
 }
