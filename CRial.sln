@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleExample", "SimpleExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginExample", "PluginExample\PluginExample.csproj", "{0DBCB24C-0B37-4618-8948-B448D5645CD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoLibraryExample", "VideoLibraryExample\VideoLibraryExample.csproj", "{C4E8E2F4-2AFC-4769-A85F-499A4076EC74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{0DBCB24C-0B37-4618-8948-B448D5645CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DBCB24C-0B37-4618-8948-B448D5645CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DBCB24C-0B37-4618-8948-B448D5645CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E8E2F4-2AFC-4769-A85F-499A4076EC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E8E2F4-2AFC-4769-A85F-499A4076EC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E8E2F4-2AFC-4769-A85F-499A4076EC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E8E2F4-2AFC-4769-A85F-499A4076EC74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +42,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{95FF7195-C4AB-43C4-AF94-675E7F365D52} = {C6B86FCF-3429-4A2A-BA18-D694E2DBA722}
 		{0DBCB24C-0B37-4618-8948-B448D5645CD9} = {C6B86FCF-3429-4A2A-BA18-D694E2DBA722}
+		{C4E8E2F4-2AFC-4769-A85F-499A4076EC74} = {C6B86FCF-3429-4A2A-BA18-D694E2DBA722}
 	EndGlobalSection
 EndGlobal

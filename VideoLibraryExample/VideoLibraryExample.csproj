@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0DBCB24C-0B37-4618-8948-B448D5645CD9}</ProjectGuid>
+    <ProjectGuid>{C4E8E2F4-2AFC-4769-A85F-499A4076EC74}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PluginExample</RootNamespace>
+    <RootNamespace>VideoLibraryExample</RootNamespace>
     <AssemblyName>addon</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

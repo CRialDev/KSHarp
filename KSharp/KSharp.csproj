@@ -80,6 +80,14 @@
     <Compile Include="xbmcplugin\PluginFile.cs" />
     <Compile Include="xbmcplugin\PluginFolder.cs" />
     <Compile Include="xbmcplugin\PluginItem.cs" />
+    <Compile Include="xbmcrpc\Actor.cs" />
+    <Compile Include="xbmcrpc\Artwork.cs" />
+    <Compile Include="xbmcrpc\Episode.cs" />
+    <Compile Include="xbmcrpc\Movie.cs" />
+    <Compile Include="xbmcrpc\Resume.cs" />
+    <Compile Include="xbmcrpc\Season.cs" />
+    <Compile Include="xbmcrpc\TVShow.cs" />
+    <Compile Include="xbmcrpc\VideoLibrary.cs" />
     <Compile Include="xbmcvfs\File.cs" />
     <Compile Include="xbmc\InfoTagMusic.cs" />
     <Compile Include="xbmc\InfoTagVideo.cs" />

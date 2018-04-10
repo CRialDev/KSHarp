@@ -1,0 +1,5 @@
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\VideoLibraryExample\bin\Debug\VideoLibraryExample.exe.config
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\VideoLibraryExample\bin\Debug\VideoLibraryExample.exe
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\VideoLibraryExample\bin\Debug\VideoLibraryExample.pdb
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\VideoLibraryExample\bin\Debug\KSharp.dll
+C:\Users\CRial\Documents\Visual Studio 2015\Projects\Github\CRial\VideoLibraryExample\bin\Debug\KSharp.pdb
