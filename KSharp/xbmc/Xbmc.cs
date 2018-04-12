@@ -193,6 +193,7 @@ namespace CRial
         RIGHT = 0x00000001,//< Align X right
         CENTER_X = 0x00000002,//< Align X center
         CENTER_Y = 0x00000004,//< Align Y center
+        CENTER = 0x00000006,//Align center by both axis
         TRUNCATED = 0x00000008,//< Truncated text
         JUSTIFIED = 0x00000010 //< Justify text
     }

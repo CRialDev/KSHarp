@@ -66,6 +66,7 @@
     <Compile Include="xbmcgui\List.cs" />
     <Compile Include="xbmcgui\ListItem.cs" />
     <Compile Include="xbmcgui\Progress.cs" />
+    <Compile Include="xbmcgui\RadioButton.cs" />
     <Compile Include="xbmcgui\Slider.cs" />
     <Compile Include="xbmcgui\Spin.cs" />
     <Compile Include="xbmcgui\TextBox.cs" />

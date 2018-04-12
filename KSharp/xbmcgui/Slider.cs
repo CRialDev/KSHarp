@@ -17,6 +17,8 @@ namespace CRial.xbmcgui
         private string _texture;
         private string _texturefocus;
         private Orientation _orientation;
+        public Slider(int x, int y, int width, int height, Colors colorback, Colors texture, Colors colorfocus, Orientation orientation = Orientation.Vertical)
+        : this(x, y, width, height, colorback.Texture, texture.Texture, colorfocus.Texture,orientation) { }
         public Slider(int x, int y, int width, int height, string textureback, string texture, string texturefocus,Orientation orientation= Orientation.Vertical)
         : base()
         {
@@ -25,7 +27,7 @@ namespace CRial.xbmcgui
             _texturefocus = texturefocus;
             _orientation = orientation;
             //
-            Utils.Call(_name + " = xbmcgui.ControlButton(" + x + "," + y + "," + width + "," + height + ", textureback = '" + textureback + "', texture = '" + texture + "', texturefocus = '" + texturefocus + "', orientation = " + (int)orientation + ")");
+            Utils.Call(_name + " = xbmcgui.ControlSlider(" + x + "," + y + "," + width + "," + height + ", textureback = '" + textureback + "', texture = '" + texture + "', texturefocus = '" + texturefocus + "', orientation = " + (int)orientation + ")");
         }
         public Slider(int x, int y, int width, int height, Orientation orientation = Orientation.Vertical)
                 : base()
@@ -35,7 +37,7 @@ namespace CRial.xbmcgui
             _texturefocus = null;
             _orientation = orientation;
             //
-            Utils.Call(_name + " = xbmcgui.ControlButton(" + x + "," + y + "," + width + "," + height + ", orientation = " + (int)orientation + ")");
+            Utils.Call(_name + " = xbmcgui.ControlSlider(" + x + "," + y + "," + width + "," + height + ", orientation = " + (int)orientation + ")");
         }
         public string TextureBack
         {

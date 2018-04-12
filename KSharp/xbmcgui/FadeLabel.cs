@@ -18,9 +18,9 @@
             _font = font;
             _textColor = textColor;
             //
-            Utils.Call(_name + " = xbmcgui.ControlFadeLabel(" + x + "," + y + "," + width + "," + height + ",font='" + _font + "', textColor='" + _textColor + "', _alignment=" + (int)alignment + ")");
+            Utils.Call(_name + " = xbmcgui.ControlFadeLabel(" + x + "," + y + "," + width + "," + height + ",font='" + _font + "', "+ Colors.ToParam("textColor", _textColor)+" _alignment =" + (int)alignment + ")");
         }
-        public FadeLabel(int x, int y, int width, int height) : this(x, y, width, height, Colors.Black) { }
+        public FadeLabel(int x, int y, int width, int height, string font = "font13", Alignment alignment = Alignment.CENTER_X) : this(x, y, width, height, Colors.None, font:font, alignment:alignment) { }
 
         internal FadeLabel(string name) : base(name)
         {

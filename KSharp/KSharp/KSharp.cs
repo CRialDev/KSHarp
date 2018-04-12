@@ -185,6 +185,10 @@ namespace CRial
             Utils.Call("self.addonStarted = False");
             ListenerThread.Abort();
         }
+        public void Delete(Python.PythonObject obj)
+        {
+            Utils.Call("del " + obj._name);
+        }
         //
         ~KSharp()
         {

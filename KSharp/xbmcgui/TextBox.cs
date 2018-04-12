@@ -16,10 +16,10 @@
         {
             _font = font;
             _textColor = textColor;
-            Utils.Call(_name + " = xbmcgui.ControlTextBox(" + x + "," + y + "," + width + "," + height + ",font='" + font + "', textColor='" + textColor + "')");
+            Utils.Call(_name + " = xbmcgui.ControlTextBox(" + x + "," + y + "," + width + "," + height + ","+ Colors.ToParam("textColor", _textColor)+" font ='" + font + "')");
         }
         public TextBox(int x, int y, int width, int height, string font = "font13")
-        : this(x, y, width, height, Colors.Black) { }
+        : this(x, y, width, height, Colors.None) { }
 
         internal TextBox(string name) : base(name)
         {

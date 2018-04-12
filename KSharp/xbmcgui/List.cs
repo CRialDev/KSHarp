@@ -16,10 +16,13 @@ namespace CRial.xbmcgui
         private int _itemTextXOffset;
         private int _itemTextYOffset;
         private Alignment _alignmentY;
-        private Colors _shadowColor;
+        private Colors _textColor;
         #region Constructor
         //
-        public List(int x, int y, int width, int height, string label, string buttonTexture, string buttonFocusTexture, Colors selectedColor, Colors shadowColor, int imageWidth = 10, int imageHeight = 10, int itemTextXOffset = 10, int itemTextYOffset = 2, int itemHeight = 27, int space = 2, Alignment alignmentY = Alignment.CENTER_Y)
+        public List(int x, int y, int width, int height, Colors buttonColor, Colors buttonFocusColor, Colors selectedColor, Colors textColor, int imageWidth = 10, int imageHeight = 10, int itemTextXOffset = 10, int itemTextYOffset = 2, int itemHeight = 27, int space = 2, Alignment alignmentY = Alignment.CENTER_Y)
+        : this(x, y, width, height, buttonColor.Texture, buttonFocusColor.Texture,selectedColor, textColor, imageWidth ,imageHeight,itemTextXOffset,itemTextYOffset,itemHeight,space,alignmentY)
+        { }
+        public List(int x, int y, int width, int height, string buttonTexture, string buttonFocusTexture, Colors selectedColor, Colors textColor, int imageWidth = 10, int imageHeight = 10, int itemTextXOffset = 10, int itemTextYOffset = 2, int itemHeight = 27, int space = 2, Alignment alignmentY = Alignment.CENTER_Y)
         : base()
         {
             _buttonTexture = buttonTexture;
@@ -30,11 +33,12 @@ namespace CRial.xbmcgui
             _itemTextXOffset = itemTextXOffset;
             _itemTextYOffset = itemTextYOffset;
             _alignmentY = alignmentY;
-            _shadowColor = shadowColor;
+            _textColor = textColor;
+            string colors = Colors.ToParam("textColor", _textColor) + Colors.ToParam("selectedColor", _selectedColor);
             //
-            Utils.Call(_name + " = xbmcgui.ControlList(" + x + "," + y + "," + width + "," + height + ",'" + label + "','buttonTexture' = '" + buttonTexture + "','buttonFocusTexture' = '" + buttonFocusTexture + "','selectedColor' = '" + selectedColor + "','imageWidth' = " + imageWidth + ",'imageHeight' = " + imageHeight + ",'itemTextXOffset' = " + itemTextXOffset + ",'itemTextYOffset' = " + itemTextYOffset + ",'itemHeight' = " + itemHeight + ",'space' = " + space + ",'alignmentY' = " + alignmentY + ",'shadowColor' = '" + shadowColor + "')");
+            Utils.Call(_name + " = xbmcgui.ControlList(" + x + "," + y + "," + width + "," + height  + ",buttonTexture = '" + buttonTexture + "',buttonFocusTexture = '" + buttonFocusTexture + "'," + colors + " _imageWidth = " + imageWidth + ",_imageHeight = " + imageHeight + ",_itemTextXOffset = " + itemTextXOffset + ",_itemTextYOffset = " + itemTextYOffset + ",_itemHeight = " + itemHeight + ",_space = " + space + ",_alignmentY = " + (int)alignmentY + ")");
         }
-        public List(int x, int y, int width, int height, string label, Colors selectedColor, Colors shadowColor, int imageWidth = 10, int imageHeight = 10, int itemTextXOffset = 10, int itemTextYOffset = 2, int itemHeight = 27, int space = 2, Alignment alignmentY = Alignment.CENTER_Y)
+        public List(int x, int y, int width, int height, Colors selectedColor, Colors textColor, int imageWidth = 10, int imageHeight = 10, int itemTextXOffset = 10, int itemTextYOffset = 2, int itemHeight = 27, int space = 2, Alignment alignmentY = Alignment.CENTER_Y)
         : base()
         {
             _buttonTexture = null;
@@ -45,12 +49,13 @@ namespace CRial.xbmcgui
             _itemTextXOffset = itemTextXOffset;
             _itemTextYOffset = itemTextYOffset;
             _alignmentY = alignmentY;
-            _shadowColor = shadowColor;
+            _textColor = textColor;
+            string colors = Colors.ToParam("textColor", _textColor) + Colors.ToParam("selectedColor", _selectedColor);
             //
-            Utils.Call(_name + " = xbmcgui.ControlList(" + x + "," + y + "," + width + "," + height + ",'" + label + "','selectedColor' = '" + selectedColor + "','imageWidth' = " + imageWidth + ",'imageHeight' = " + imageHeight + ",'itemTextXOffset' = " + itemTextXOffset + ",'itemTextYOffset' = " + itemTextYOffset + ",'itemHeight' = " + itemHeight + ",'space' = " + space + ",'alignmentY' = " + alignmentY + ",'shadowColor' = '" + shadowColor + "')");
+            Utils.Call(_name + " = xbmcgui.ControlList(" + x + "," + y + "," + width + "," + height + ","+colors+" _imageWidth = " + imageWidth + ",_imageHeight = " + imageHeight + ",_itemTextXOffset = " + itemTextXOffset + ",_itemTextYOffset = " + itemTextYOffset + ",_itemHeight = " + itemHeight + ",_space = " + space + ",_alignmentY = " + (int)alignmentY + ",textColor = " + textColor + ")");
         }
-        public List(int x, int y, int width, int height, string label)
-        : this(x, y, width, height, label, Colors.Blue, Colors.Transparent) { }
+        public List(int x, int y, int width, int height)
+        : this(x, y, width, height, Colors.None, Colors.None) { }
         internal List(string name) : base(name)
         {
         }
@@ -112,11 +117,11 @@ namespace CRial.xbmcgui
                 return _alignmentY;
             }
         }
-        public Colors ShadowColor
+        public Colors TextColor
         {
             get
             {
-                return _shadowColor;
+                return _textColor;
             }
         }
         public void addItem(string item, bool sendMessage = true)
@@ -200,10 +205,10 @@ namespace CRial.xbmcgui
         {
             return Utils.Call<long>(_name + ".size()");
         }
-        public ListItem getListItem()
+        public ListItem getListItem(int index)
         {
-            string item = "li_" + Utils.GenerateId();
-            Utils.Call(item + " = " + _name + ".getListItem()");
+            string item = "self.li_" + Utils.GenerateId();
+            Utils.Call(item + " = " + _name + ".getListItem("+index+")");
             return new ListItem(item);
         }
         public void removeItem(int index)

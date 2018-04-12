@@ -14,5 +14,9 @@ namespace CRial.xbmcgui
         {
             Utils.Call(_name + ".setTextures('"+ up+ "','" + down + "', '" +  upFocus + "','" +  downFocus + "')");
         }
+        public void setTextures(Colors up, Colors down, Colors upFocus, Colors downFocus)
+        {
+            setTextures(up.Texture, down.Texture, upFocus.Texture, downFocus.Texture);
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using CRial.xbmcaddon;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,20 +22,28 @@ namespace CRial
         {
             get { return _name; }
         }
-        /*public string Texture
+        internal string Texture
         {
-            get { return new Addon("virtual.ksharp-tools").getAddonInfo("path") + "/resources/colors/" + _name + ".png"; }
-        }*/
+            get { return Path.Combine(new Addon().getAddonInfo("path"), "KSharp", "Colors", _name + ".png"); }
+        }
         public string Hex
         {
             get { return _hex; }
         }
         //
+        internal static string ToParam(string paramname, Colors _Color)
+        {
+            if (_Color.Name == "None")
+                return "";
+            else
+                return paramname + " = '" + _Color + "',";
+        }
         public static implicit operator string(Colors value)
         {
-            return value._hex;
+                return value._hex;
         }
         //
+        public static Colors None = new Colors("None", "");
         public static Colors ActiveBorder = new Colors("ActiveBorder", "0xFFB4B4B4");
         public static Colors ActiveCaption = new Colors("ActiveCaption", "0xFF99B4D1");
         public static Colors ActiveCaptionText = new Colors("ActiveCaptionText", "0xFF000000");

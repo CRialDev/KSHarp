@@ -335,6 +335,11 @@ namespace CRial
                     KSharp.Responses[id].AEvent.WaitOne();
                     res = (T)(object)float.Parse(KSharp.Responses[id].Value, CultureInfo.InvariantCulture.NumberFormat);
                     break;
+                case TypeCode.Double:
+                    Call("self.Write('0:" + id + ":'+ str(" + TransformString(Command) + "))");
+                    KSharp.Responses[id].AEvent.WaitOne();
+                    res = (T)(object)double.Parse(KSharp.Responses[id].Value, CultureInfo.InvariantCulture.NumberFormat);
+                    break;
                 case TypeCode.Int64:
                     Call("self.Write('0:" + id + ":'+ str(" + TransformString(Command) + "))");
                     KSharp.Responses[id].AEvent.WaitOne();

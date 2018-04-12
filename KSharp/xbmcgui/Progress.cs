@@ -13,7 +13,8 @@ namespace CRial.xbmcgui
         private string _texturemid;
         private string _textureoverlay;
         private string _textureright;
-
+        public Progress(int x, int y, int width, int height, Colors Colorbg, Colors Colorleft, Colors Colormid, Colors Colorright, Colors Coloroverlay)
+       : this(x, y, width, height, Colorbg.Texture, Colorleft.Texture, Colormid.Texture, Colorright.Texture, Coloroverlay.Texture) { }
         public Progress(int x, int y, int width, int height, string texturebg, string textureleft, string texturemid, string textureright, string textureoverlay)
         : base()
         {
